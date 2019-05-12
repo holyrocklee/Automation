@@ -3,7 +3,7 @@
 
 | 作者 | 个人邮箱 | 个人主页 |
 | ------ | ------ | ------ |
-| xjin | xjin@che300.com | [Github主页](https://github.com/holyrocklee) |
+| cxli | 2350098214@qq.com | [Github主页](https://github.com/holyrocklee) |
 *************************************
 # 项目介绍
 WebAutomation是一个基于java语言开发的自动化测试工具。本页面是web自动化测试用例使用说明，app自动化测试用例使用说明见[APP自动化测试](https://github.com/holyrocklee)
