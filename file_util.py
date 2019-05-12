@@ -79,6 +79,6 @@ class fileutil:
 
 
 if __name__ == '__main__':
-    util = fileutil('E:/projects/Automation/webAutomation.xlsx', encoding='utf-8')
+    util = fileutil("E:\\pycharm\\offer\\projects\\Automation\\webAutomation.xlsx", encoding='utf-8')
     util.readlines()
     util.close()

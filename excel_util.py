@@ -6,6 +6,7 @@ import logging
 import math
 import xlrd
 import xlwt
+import xlutils
 from xlutils.copy import copy
 
 class excelutil:
