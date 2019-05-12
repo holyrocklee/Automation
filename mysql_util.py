@@ -2,8 +2,8 @@
 import pymysql
 import logging
 
-from com.eason.util.excel_util import excelutil
-from com.eason.util.file_util import fileutil
+from offer.projects.Automation.excel_util import excelutil
+from offer.projects.Automation.file_util import fileutil
 
 '''
        构建util
@@ -61,4 +61,4 @@ class mysql_util:
         util.close()
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':

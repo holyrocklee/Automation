@@ -7,8 +7,8 @@ import random
 import time
 import socket
 
-from com.eason.util.file_util import fileutil
-from com.eason.util.mysql_util import mysql_util
+from offer.projects.Automation.file_util import fileutil
+from offer.projects.Automation.mysql_util import mysql_util
 
 """
 
