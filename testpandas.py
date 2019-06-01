@@ -7,7 +7,7 @@ import re
 from offer.projects.Automation.excel_util import excelutil
 
 def get_result():
-    df = pd.read_excel('E:\\api\\发动机.xlsx')  #待处理的文件
+    df = pd.read_excel('E:\\javatest\\发动机.xlsx')
     # 将发动机excel文件插入第一行，表头分别为:描述详情的用simple_detail，描述序号的用num，其他表头无所谓
     data=df.ix[:,['simple_detail','num']].values  #读所有行的simple_detail以及num列的值，这里需要嵌套列表
     # detail = list(data[0][0])
@@ -53,12 +53,12 @@ def manage_result(resultA):
     return simplelist
 
 def save_excel(singlenumbers,detail,simplelist):
-    # df = pd.DataFrame({'num': singlenumbers, 'details': detail, 'result': simplelist})
-    # df.to_excel('E:\\api\\final.xlsx')
-    # print("Done!")
-    util = excelutil('E:\\api\\final.xls','a', head=['num','details','result']) #注意先在本地建一个空白.xls文件
-    for singlenumber,singledetail,simpleresult in zip(singlenumbers,detail,simplelist):
-        util.write_nextline([singlenumber,singledetail,simpleresult], save=True)
+    df = pd.DataFrame({'num':singlenumbers,'details':detail,'result':simplelist})
+    df.to_excel('E:\\javatest\\final.xlsx')
+    print("Done!")
+    # util = excelutil('E:\\javatest\\final.xls','a', head=['num','details','result']) #注意先在本地建一个空白.xls文件
+    # for singlenumber,singledetail,simpleresult in zip(singlenumbers,detail,simplelist):
+    #     util.write_nextline([singlenumber,singledetail,simpleresult], save=True)
 
 if __name__ == '__main__':
     singlenumbers,resultA,detail = get_result()
